@@ -236,7 +236,12 @@ function isPrime(n) {
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(value, def) {
-    throw new Error('Not implemented');
+    if (Number(value)){
+        return(Number(value))
+    }
+    else {
+        return def
+    }
 }
 
 module.exports = {
